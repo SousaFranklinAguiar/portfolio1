@@ -131,6 +131,7 @@ header{
     margin-bottom: 2rem;
     animation: moveBanner 1s 0.7s forwards;
     opacity: 0;
+    width: 200%;
 }
 
 .banner button {
@@ -145,12 +146,44 @@ header{
     background: linear-gradient(to left, #a044ff, #6a3093);
     padding: 1rem 3rem;
     border: none;
-    width: 22%;
+    
     border-radius: 5px;
     cursor: pointer;
     opacity: 0;
     animation: moveBanner 1s 0.7s forwards;
   }
+
+.itens{
+    display: flex;
+    justify-content: space-between;
+  }
+
+@media (max-width: 900px){
+  .itens{
+    display: grid;
+
+  }
+
+  .banner button {
+    margin-top: 15px;
+    font-family: var(--font-action);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    justify-content: center;
+    align-items: center;
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    background: linear-gradient(to left, #a044ff, #6a3093);
+    padding: 1rem 3rem;
+    border: none;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
+  }
+}
 
   @keyframes moveBanner {
     0% {
@@ -229,10 +262,7 @@ header{
     background-color: #a044ff;
   }
 
-  .itens{
-    display: flex;
-    justify-content: space-between;
-  }
+
 
   .item{
     border-radius: 5px;
