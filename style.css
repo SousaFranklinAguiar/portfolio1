@@ -15,7 +15,7 @@
   width: 20rem;
   animation: moverLogo 3s;
 }
-.logo-banner img{
+#logo{
   height: 16rem;
   position: relative;
   bottom: 3rem;
@@ -24,7 +24,16 @@
   animation-iteration-count: infinite;
   
 }
-
+#seta{
+  cursor: pointer;
+  position: relative;
+  height: 4rem;
+  left: 25rem;
+  top: 4rem;
+  opacity: 0;
+  animation: seta 3s  ease infinite;
+  animation-delay: 3s;
+}
 .texto-logo{
     height: 15rem;
     font-size: 3rem;
@@ -52,7 +61,7 @@ header{
 
 .img-wrapper{
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: rgba(0,0,0, 0.9);
 }
 
@@ -66,8 +75,8 @@ header{
 
 .banner{
     position: absolute;
-    top: 10%;
-    left: 30%;
+    top: 20%;
+    left: 17%;
     width: 55rem;
 }
 
@@ -122,19 +131,40 @@ header{
 }
 
 .container-projeto{
-  position: absolute;
-  top: 33rem;
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 .itens-projeto{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   margin: 0.8rem;
   width: 33%;
-  height: 20rem;
-  background-color: rgb(255, 154, 2);
+  height: 30rem;
+}
+.itens-projeto h1{
+  text-align: center;
+  font-size: 1.5rem;
+  width: 20rem;
+  color: white;
+  text-shadow: 0.1rem 0.1rem black;
+  animation: itens 1.5s infinite;
 }
 
+.bg-foto-projeto{
+  border-radius: 100px;
+  height: 10rem;
+  background-color: white;
+  width: 10rem;
+}
+.itens-projeto img{
+  height: 7rem;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  animation: itens 2s infinite;
+}
 #primeiro-projeto{
   background: linear-gradient(185deg, #f31c1c, #ec7f16);
   background-size: 400% 400%;
@@ -159,6 +189,30 @@ header{
   animation: AnimationName 52s ease infinite;
 }
 
+.container-sobre{
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(146, 13, 8);
+  align-items: center;
+}
+.container-sobre img{
+  padding-top: 2rem;
+  height: 25rem;
+}
+.texto-sobrenos{
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.5rem;
+  align-items: center;
+  color: white;
+  text-shadow: 0.1rem 0.1rem black;
+}
+
+
+  /* ANIMAÇÕES */
+
 @keyframes zoom {
     0% {
       transform: scale(1.3);
@@ -181,6 +235,15 @@ header{
     opacity: 1;
   }
 }
+
+  @keyframes seta{
+    0%{
+      opacity: 0.3;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
 
 
   @keyframes moverLogo {
@@ -212,4 +275,16 @@ header{
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
+}
+
+@keyframes itens{
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(4px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes cajuPulo {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(30px); }
+  100% { transform: translateY(0); }
 }
