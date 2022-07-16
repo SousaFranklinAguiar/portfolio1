@@ -221,6 +221,56 @@ header{
   text-shadow: 0.1rem 0.1rem black;
 }
 
+
+.contato{
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #aa1010;
+  color: #eee0d3;
+  text-shadow: 0.1rem 0.1rem black;
+  justify-content: center;
+}
+.foto-contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+}
+.foto-contato h1{
+  position: relative;
+  bottom: 5rem;
+  border-style: solid;
+  border-width: 0px 0px 0.2rem 0px; /* 25px top, 10px right, 4px bottom and 35px left */
+}
+.texto-contato{
+  font-size: 2rem;
+  padding: 3rem;
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.botao-contato{
+  margin-top: 2rem;
+  background-color: #034d22;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+  width: 13rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.botao-contato img{
+  height: 2rem;
+}
+.botao-contato:hover{
+  background-color: #06a347;
+}
   /* ANIMAÇÕES */
 
 @keyframes zoom {
